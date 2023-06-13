@@ -1,21 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="dashboard.css">
-    <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet">
-    <!--JS animation link -->
-    <script defer src="app.js"></script>
-    <!-- ..fontawesome link -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet"/>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.3.0/chart.min.js" integrity="sha512-mlz/Fs1VtBou2TrUkGzX4VoGvybkD9nkeXWJm3rle0DPHssYYx4j+8kIS15T78ttGfmOjH0lLaBXGcShaVkdkg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    </head>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" href="dashboard.css" />
+		<link
+			href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+			rel="stylesheet" />
+		<!--JS animation link -->
+		<script defer src="app.js"></script>
+		<!-- ..fontawesome link -->
+		<link
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+			rel="stylesheet" />
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.3.0/chart.min.js"
+			integrity="sha512-mlz/Fs1VtBou2TrUkGzX4VoGvybkD9nkeXWJm3rle0DPHssYYx4j+8kIS15T78ttGfmOjH0lLaBXGcShaVkdkg=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"></script>
+	</head>
 
-<!-- <nav> 
+	<!-- <nav> 
   <div class="logo">
    <a href="index.html">Skill<span>ED</span></a>
    </div>
@@ -39,82 +47,85 @@
    <div class="mobile-nav">
      <i class="fas fa-bars"></i>
  </nav> -->
-<body>
-   
+	<body>
+		<!-- section1 begins -->
+		<div class="dashboard-sec1">
+			<div class="student-showcase">
+				<div class="showcase-txt">
+					<h1>Hi, <span>Giyatha</span></h1>
+					<h1>Welcome to Wilmer Academy</h1>
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
+						non, porro corporis inventore culpa quam aperiam repudiandae iusto
+						dolorem cum..
+					</p>
+					<a href="dashboard.html">See Progress</a>
+				</div>
+				<div class="showcase-chart">
+					<canvas class="myChart" id="myChart"></canvas>
+				</div>
+			</div>
+		</div>
+		<!-- section1 ends -->
 
-  <!-- section1 begins -->
-  <div class="dashboard-sec1">
-    <div class="student-showcase">
-      <div class="showcase-txt">
-        <h1>Hi, <span>Giyatha</span></h1>
-        <h1>Welcome to Wilmer Academy</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo non, porro corporis inventore culpa quam aperiam repudiandae iusto dolorem cum..</p>
-        <a href="dashboard.html">See Progress</a>
-      </div>
-      <div class="showcase-chart">
-        <canvas class="myChart" id="myChart"></canvas>
-      </div>
-    </div>
-  </div>
-  <!-- section1 ends -->
+		<!-- overview begins -->
+		<div class="overview">
+			<div class="progress sub-overview">
+				<div class="icon">
+					<i class="fas fa-chart-line"></i>
+				</div>
+				<div class="progress-txt">
+					<h1>Progresss Report</h1>
+					<p>Lorem ipsum dolor sit amet.</p>
+				</div>
+			</div>
 
-  <!-- overview begins -->
-  <div class="overview">
-    <div class="progress sub-overview">
-       <div class="icon">
-        <i class="fas fa-chart-line"></i>
-       </div>   
-       <div class="progress-txt">
-        <h1>Progresss Report</h1>
-        <p>Lorem ipsum dolor sit amet.
-        </p>
-       </div>
-    </div>
+			<div class="to-do-list sub-overview">
+				<div class="icon">
+					<i class="fas fa-clipboard-check"></i>
+				</div>
+				<div class="progress-txt">
+					<h1>Student's To-do List</h1>
+					<p>Lorem ipsum dolor sit amet.</p>
+				</div>
+			</div>
 
-    <div class="to-do-list sub-overview">
-      <div class="icon">
-        <i class="fas fa-clipboard-check"></i>
-      </div>   
-      <div class="progress-txt">
-       <h1>Student's To-do List</h1>
-       <p>Lorem ipsum dolor sit amet.
-       </p>
-      </div>
-    </div>
+			<div class="student-course sub-overview">
+				<div class="icon"></div>
+				<div class="progress-txt">
+					<h1>Student Overview</h1>
+					<p>Lorem ipsum dolor sit amet.</p>
+				</div>
+			</div>
+		</div>
+		<!-- overview ends -->
 
-    <div class="student-course sub-overview">
-      <div class="icon">
+		<div class="other-courses">
+			<div class="courses">
+				<h3>Courses You're Taking</h3>
+				<div class="active">
+					<p>Active</p>
+					<a href="courses.html"></a>
+				</div>
+			</div>
 
-      </div>   
-      <div class="progress-txt">
-       <h1>Student Overview</h1>
-       <p>Lorem ipsum dolor sit amet.
-       </p>
-      </div>
-    </div>
-  </div>
-  <!-- overview ends -->
-  
-  <div class="other-courses">
-    <div class="courses">
-      <h3>Courses You're Taking</h3>
-      <div class="active">
-        <p>Active</p>
-        <a href="courses.html"></a>
-      </div>
-    </div>
-    <div class="col1 col">
-      <h1>UI/UX Design</h1>
-    </div>
-    <div class="col2 col">
-      <h1>Product Management</h1>
-    </div>
-    <div class="col3 col">
-      <h1>Web Development</h1>
-    </div>
-  </div>
-  </div>
+			<div class="col1 col">
+				<h1>UI/UX Design</h1>
+			</div>
 
-       <script src="chart.js"></script>
-</body>
+			<div class="col2 col">
+				<h1>Product Management</h1>
+			</div>
+
+			<div class="col3 col">
+				<h1>Web Development</h1>
+			</div>
+		</div>
+
+		<footer>
+			<h1>footer</h1>
+		</footer>
+
+		<script src="chart.js"></script>
+	</body>
 </html>
