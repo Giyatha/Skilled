@@ -30,7 +30,7 @@ body {
 	flex-direction: row;
 	justify-content: center;
 	/* justify-content: space-around; */
-	flex-wrap: wrap;
+	/* flex-wrap: wrap; */
 	gap: 30px;
 	padding: 2.5rem;
 	overflow: hidden;
@@ -39,6 +39,7 @@ body {
 .showcase-txt {
 	/* margin-left: -10%; */
 	padding-top: 80px;
+	flex-basis: 50%;
 	/* width: 40%; */
 	background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.8));
 	background-color: gray;
@@ -148,4 +149,14 @@ body {
 	justify-content: space-between;
 	width: 87%;
 	margin: auto;
+}
+
+@media (min-width: 40rem) {
+	.student-showcase,
+	.overview {
+		flex-direction: row;
+		max-width: 1024px;
+		flex-wrap: nowrap;
+		gap: 5%;
+	}
 }
