@@ -1,77 +1,92 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;1,100;1,300&display=swap");
-*{
-    margin: 0%;
-    padding: 0%;
-    color: white;
+* {
+	margin: 0%;
+	padding: 0%;
+	color: white;
 }
-body{
-    background:linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(/med/pexels-jess-bailey-designs-1007025.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-blend-mode: darken;
-    height: fit-content;
+body {
+	background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+		url(/med/pexels-jess-bailey-designs-1007025.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-blend-mode: darken;
+	height: fit-content;
+	padding: 20px;
 }
-.dashboard-sec1{
-    padding-top: 100px;
+.dashboard-sec1 {
+	padding-top: 100px;
 }
-.student-showcase{
-    background:linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(/med/pexels-lumn-286559.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-blend-mode: darken;
-    background-color: grey;
-    width: 90%;
-    margin: auto;
-    height: 50vh;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    overflow: hidden;
-    border-radius: 10px;
-    
+.student-showcase {
+	background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.65)),
+		url(/med/pexels-lumn-286559.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-blend-mode: darken;
+	background-color: grey;
+	/* width: 90%; */
+	margin: auto;
+	/* height: 50vh; */
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	/* justify-content: space-around; */
+	flex-wrap: wrap;
+	gap: 30px;
+	padding: 2.5rem;
+	overflow: hidden;
+	border-radius: 10px;
 }
-.showcase-txt{
-    margin-left: -10%;
-    padding-top: 80px;
-    width: 40%;
+.showcase-txt {
+	/* margin-left: -10%; */
+	padding-top: 80px;
+	/* width: 40%; */
+	background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.8));
+	background-color: gray;
+	padding: 3% 3% 20px 3%;
+	border-radius: 3% 3% 20% 3%;
 }
-.showcase-txt h1{
-    color: white;
-    font-size: 2.5rem;
-    font-weight: bold;
+.showcase-txt h1 {
+	color: white;
+	font-size: 2.5rem;
+	font-weight: bold;
 }
-.showcase-txt p{
-    margin-top: 10px;
-    margin-bottom: 20px;
+.showcase-txt p {
+	margin-top: 10px;
+	margin-bottom: 20px;
 }
-#myChart{
-    width: 400px;
+.myChart {
+	width: 350px;
+	height: 350px;
+	background-color: grey;
+	border-radius: 46%;
 }
-.overview{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    height: 40vh;
-    margin-top: 30px;
-    width: 90%; 
-    padding: 20px;
-    margin: auto;
+.overview {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+	/* height: 40vh; */
+	margin-top: 30px;
+	width: 90%;
+	/* gap: 10%; */
+	padding: 20px;
+	margin: auto;
 }
-.sub-overview{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    background-color: #1f1d1f;
-    height: 30vh;
-    width: 27%;
-    border-radius: 10px;
-    border: none;
-    box-shadow: 2px 3px 2px 4px rgb(66, 64, 64);
-    padding: 30px;
-    margin: auto;
+.sub-overview {
+	display: flex;
+	flex-direction: row;
+	gap: 5%;
+	align-items: center;
+	text-align: left;
+	/* flex-wrap: wrap; */
+	background-color: #1f1d1f;
+	/* height: 30vh; */
+	/* width: 27%; */
+	border-radius: 10px;
+	border: none;
+	box-shadow: 2px 3px 2px 4px rgb(66, 64, 64);
+	padding: 30px;
+	margin: 10px 0;
 }
 /* .progress{
     display: flex;
@@ -97,41 +112,40 @@ body{
     height: 30vh;
     padding: 20px;
 } */
-.icon{
-    font-size: 3.5rem;
-    background-color: grey;
-    border-radius: 10px;
-    width: 80px;
-    height: 80px;
-
+.icon {
+	font-size: 3.5rem;
+	background-color: grey;
+	border-radius: 10px;
+	width: 80px;
+	height: 80px;
 }
-.icon i{
-    margin: auto;
-    padding: 15px;
+.icon i {
+	margin: auto;
+	padding: 15px;
 }
-.other-courses{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-content: space-between;
-    margin: auto;
+.other-courses {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-content: space-between;
+	margin: auto;
 }
-.col{
-    height: 25vh;
-    width: 80%;
-    background-color: #1f1d1f;
-    margin: auto;
-    margin-top: 10px;
-    border: none;
-    border-radius: 10px;
+.col {
+	height: 25vh;
+	width: 80%;
+	background-color: #1f1d1f;
+	margin: auto;
+	margin-top: 10px;
+	border: none;
+	border-radius: 10px;
 }
-.col1{
-    margin-top: 0%;
+.col1 {
+	margin-top: 0%;
 }
-.courses{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 87%;
-    margin: auto;
+.courses {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 87%;
+	margin: auto;
 }
